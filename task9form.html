@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Survey</title>
+</head>
+<body>
+    <h1>Simple Survey</h1>
+    
+    <div style="border: 1px solid black; margin-bottom:5px;">
+        <h2>Part 1: Basic Information</h2>
+        <p>Name: <input type="text"></p>
+        <p>Email: <input type="email"></p>
+    </div>
+    
+    <div style="border: 1px solid black; margin-bottom:5px ">
+        <h2>Part 2: Preferences</h2>
+        <p>What is your favorite hobby? <input type="text" placeholder="E.g.Reading Sports"></p>
+        
+        <p>Do you like surveys? <br>
+        <input type="radio" id="yes" name="survey_like" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="survey_like" value="no">
+        <label for="no">No</label>
+        </p>
+        <p>Which topics are you interested in? (Check all that apply):<br>
+        <input type="checkbox" id="tech" name="topics" value="technology">
+        <label for="tech">Technology</label><br>
+        <input type="checkbox" id="sports" name="topics" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="topics" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="travel" name="topics" value="travel">
+        <label for="travel">Travel</label>
+        </p>
+    </div>
+    
+    <div style="border: 1px solid black; margin-bottom:5px;">
+        <h2>Part 3: Comments</h2>
+        <p>Any comments or suggestions:<br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </p>
+        </div>
+ 
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    
+</body>
+</html>
